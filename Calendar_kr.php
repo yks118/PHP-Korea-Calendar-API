@@ -463,6 +463,21 @@ class Calendar_kr {
 					);
 				break;
 		}
+
+		// etc
+		if ($year == '2017') {
+			if ($month == '05') {
+				$this->data['09'][] = $data['data']['09'][] = array(
+					'name'=>'19대 대통령 선거',
+					'category'=>'holiday'
+				);
+			} else if ($month == '10') {
+				$this->data['02'][] = $data['data']['02'][] = array(
+					'name'=>'임시공휴일',
+					'category'=>'holiday'
+				);
+			}
+		}
 		
 		return $data;
 	}
